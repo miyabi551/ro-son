@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>従業員登録</title>
+</head>
+<body>
+    <h1>従業員登録</h1>
+    <form action="register_employee.php" method="post">
+        <label for="last_name">姓:</label><br>
+        <input type="text" id="last_name" name="last_name"><br>
+        <label for="first_name">名:</label><br>
+        <input type="text" id="first_name" name="first_name"><br>
+        <label for="user_id">ユーザーID:</label><br>
+        <input type="text" id="user_id" name="user_id"><br>
+        <label for="password">パスワード:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="confirm_password">パスワード（確認）:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password"><br>
+        <label for="role">ロール:</label><br>
+        <select id="role" name="role">
+            <option value="管理者">管理者</option>
+            <option value="従業員">従業員</option>
+        </select><br><br>
+        <input type="submit" value="登録確認">
+    </form>
+</body>
+</html>
